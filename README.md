@@ -2,7 +2,13 @@
 ***
 *Description*\
 Thesis about embedding trade-confirmation pairs by utilizing 
-contrastive learning. 
+contrastive learning. \
+
+Model uses pre-trained glove embeddings that are to large to store on github.
+For the training to run they need to be downloaded: \
+`https://www.kaggle.com/datasets/adityajn105/glove6b50d`\
+The downloaded file should be named `glove.6B.50d.txt` and place under `contrastive_matching/glove/`.
+
 
 ***
 *Generating Data*\
@@ -17,8 +23,9 @@ The files will be saved in the *data*-directory.
 The code for the model is in the folder named *contrastive matching*.
 The model is initialised and trained by running:\
 `python train.py`\
-Pre-pickled files for the dataloader are in the *disc_data_files*-directory
-and pre-generated data-files are in the *disc_data*-directory. These are loaded
-in the train script instead of generating new ones since that takes longer.
+Uses the generated data-files from the `data`-directory to train.
+
+***
+**
 
 
