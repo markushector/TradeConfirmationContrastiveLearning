@@ -1,0 +1,5 @@
+This is a confirmation email.
+The TRADE_DATE a trade was agreed upon to DIRECTION UNITS number of ASSET shares for PRICE CURRENCY per share. The
+agent in charge of the trade is CPTY_AGENT and the trade was finalized the SETTLEMENT_DATE.
+
+Best wishes!
