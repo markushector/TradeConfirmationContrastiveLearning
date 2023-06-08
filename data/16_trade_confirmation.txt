@@ -1,5 +1,5 @@
 This is a confirmation email.
-The 2018-06-08 a trade was agreed upon to SELL 5707 number of AAPL shares for 1600.35 SEK per share. The
-agent in charge of the trade is Juan Hunt and the trade was finalized the 2018-06-08.
+The 2018-06-08 a trade was agreed upon to SELL 636 number of MSFT shares for 1041.15 DKK per share. The
+agent in charge of the trade is Lisa Morgan and the trade was finalized the 2018-06-08.
 
 Best wishes!

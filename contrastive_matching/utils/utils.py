@@ -11,7 +11,7 @@ def get_args():
     parser.add_argument('--learning-rate', '-lr', type=float, default=0.001, help='Learning rate. ')
     parser.add_argument('--number-of-heads', '-nH', type=int, default=2, help='Number of heads used for attention. ')
     parser.add_argument('--device', '-d', type=str, default='cpu', help='Device to be used, "cpu" or "cuda". ')
-    parser.add_argument('--batch-size', '-bS', type=int, default=200, help='Batch size for training. ')
+    parser.add_argument('--batch-size', '-bS', type=int, default=20, help='Batch size for training. ')
     parser.add_argument('--shuffle', '-sh', type=bool, default=True, help='Shuffle training samples during training. ')
     parser.add_argument('--projection-head', '-pH', type=bool, default=False,
                         help='Whether or not to use projection head. ')

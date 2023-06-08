@@ -1,5 +1,5 @@
 This is a confirmation email.
-The 2018-06-08 a trade was agreed upon to SELL 7907 number of AAPL shares for 1346.14 CHF per share. The
-agent in charge of the trade is David Sanchez and the trade was finalized the 2018-06-08.
+The 2018-06-08 a trade was agreed upon to BUY 4435 number of AMZN shares for 577.23 DKK per share. The
+agent in charge of the trade is Danielle Lee and the trade was finalized the 2018-06-08.
 
 Best wishes!

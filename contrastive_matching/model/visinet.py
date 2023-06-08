@@ -69,14 +69,9 @@ class VisiNet(nn.Module):
         else:
             x = torch.mean(x, 1)
             y = torch.mean(y, 1)
-            #x = torch.randn(x.shape)
-            #y = torch.randn(y.shape)
 
         x = self.contrastive(x)
         y = self.contrastive(y)
-
-        #print(f"Trade: {F.normalize(x, dim=1)}")
-        #print(f"Conf: {F.normalize(y, dim=1)}")
 
         return x, y
 
@@ -148,12 +143,11 @@ class VisiNet(nn.Module):
         # Training
         self.lr = self.args.learning_rate
         self.epochs = self.args.epochs
-        # self.params = list(self.trade_attention.parameters()) + list(self.conf_attention.parameters()) + list(
-        # self.contrastive.parameters())
+
         self.params = self.parameters()
         self.optim = optim.Adam(self.params, lr=self.lr)
         self.contrastive_loss = ContrastiveLoss(batch_size=self.args.batch_size)
-        #self.contrastive_loss = ContrastiveLossOriginal(batch_size=self.args.batch_size)
+
         self.losses = []
 
     def train_model(self):
@@ -180,18 +174,18 @@ class VisiNet(nn.Module):
                 self.optim.step()
                 epoch_loss += loss.item()
 
-                if j % 10 == 0:
-                    plt.figure()
-                    plt.scatter(F.normalize(latent_trades).detach().numpy()[:, 0], F.normalize(latent_trades).detach().numpy()[:, 1])
-                    plt.scatter(F.normalize(latent_confs).detach().numpy()[:, 0], F.normalize(latent_confs).detach().numpy()[:, 1])
-                    plt.show()
-                    bar.set_description(f"Epoch: {i + 1} Loss: {epoch_loss / len(self.dataloader)} Positives: {positives}")
-                    #print(f"Positives: {positives}")
+                ### Remove comments to plot during training
+                #if j % 10 == 0:
+                #    plt.figure()
+                #    plt.scatter(F.normalize(latent_trades).detach().numpy()[:, 0], F.normalize(latent_trades).detach().numpy()[:, 1])
+                #    plt.scatter(F.normalize(latent_confs).detach().numpy()[:, 0], F.normalize(latent_confs).detach().numpy()[:, 1])
+                #    plt.show()
+                #    bar.set_description(f"Epoch: {i + 1} Loss: {epoch_loss / len(self.dataloader)} Positives: {positives}")
+
 
             losses.append(epoch_loss)
             bar.update()
             bar.set_description(f"Epoch: {i + 1} Loss: {epoch_loss/len(self.dataloader)} Positives: {positives}")
-            #print(f"Epoch: {i + 1} Loss: {epoch_loss/len(self.dataloader)}")
 
         self.losses.append(losses)
 

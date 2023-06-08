@@ -1,5 +1,5 @@
 This is a confirmation email.
-The 2018-06-08 a trade was agreed upon to BUY 1861 number of UNH shares for 779.4 USD per share. The
-agent in charge of the trade is Thomas Boyle and the trade was finalized the 2018-06-08.
+The 2018-06-08 a trade was agreed upon to SELL 2341 number of MSFT shares for 341.55 EUR per share. The
+agent in charge of the trade is Ann Kent and the trade was finalized the 2018-06-08.
 
 Best wishes!

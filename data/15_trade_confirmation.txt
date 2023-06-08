@@ -1,5 +1,5 @@
 This is a confirmation email.
-The 2018-06-08 a trade was agreed upon to BUY 6922 number of MSFT shares for 2142.02 USD per share. The
-agent in charge of the trade is Stephen Meyer Jr. and the trade was finalized the 2018-06-08.
+The 2018-06-08 a trade was agreed upon to SELL 1515 number of JNJ shares for 1607.61 USD per share. The
+agent in charge of the trade is Jose Yang and the trade was finalized the 2018-06-08.
 
 Best wishes!
