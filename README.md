@@ -9,7 +9,6 @@ For the training to run they need to be downloaded: \
 `https://www.kaggle.com/datasets/adityajn105/glove6b50d`\
 The downloaded file should be named `glove.6B.50d.txt` and place under `contrastive_matching/glove/`.
 
-
 ***
 *Generating Data*\
 Data was not available so first part of project was to generate
